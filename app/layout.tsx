@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair-display",
   subsets: ["latin"],
 });
 
@@ -22,12 +27,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
-        {children}
+        <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
+          <main className="flex min-h-screen w-full max-w-4xl flex-col px-16 bg-white dark:bg-black sm:items-start">
+            <nav className="w-full flex justify-between items-center py-8">
+              <Link href="/"><h1 className="font-title italic text-4xl leading-none">Patrícia <span className="block ml-6 -mt-2">Antunes</span></h1></Link>
+              <Link href="/work">01/work</Link>
+              <Link href="/skills">02/skills</Link>
+              <Link href="/contacts">03/contacts</Link>
+            </nav>
+            {children}
+            <footer className="pt-8 pb-4 text-center w-full">
+              <p className="italic mb-1 text-sm">© {currentYear} Patrícia Antunes. Designed & built by me.</p>
+              <p>LinkedIn · GitHub</p>
+            </footer>
+          </main>
+        </div>
+        
       </body>
     </html>
   );
