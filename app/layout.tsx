@@ -15,6 +15,7 @@ const inter = Inter({
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -36,17 +37,17 @@ export default function RootLayout({
         className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
         <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
-          <main className="flex min-h-screen w-full max-w-4xl flex-col px-16 bg-white dark:bg-black sm:items-start">
+          <main className="flex min-h-screen w-full max-w-5xl flex-col px-16 bg-white dark:bg-black sm:items-start">
             <nav className="w-full flex justify-between items-center py-8">
               <Link href="/"><h1 className="font-title italic text-4xl leading-none">Patrícia <span className="block ml-6 -mt-2">Antunes</span></h1></Link>
-              <Link href="/work">01/work</Link>
+              <Link href="/experience">01/experience</Link>
               <Link href="/skills">02/skills</Link>
               <Link href="/contacts">03/contacts</Link>
             </nav>
             {children}
             <footer className="pt-8 pb-4 text-center w-full">
               <p className="italic mb-1 text-sm">© {currentYear} Patrícia Antunes. Designed & built by me.</p>
-              <p>LinkedIn · GitHub</p>
+              <p><a className="underline" target="_blank" href="https://www.linkedin.com/in/patr%C3%ADcia-antunes-b1906a114/">LinkedIn</a> · <a className="underline" target="_blank" href="https://github.com/patriciafantunes">GitHub</a></p>
             </footer>
           </main>
         </div>
