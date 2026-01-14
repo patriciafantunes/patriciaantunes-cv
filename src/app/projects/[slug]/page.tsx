@@ -25,8 +25,6 @@ export default async function ProjectPage({ params }: PageProps) {
 
   if (!project) notFound();
 
- 
-
   return (
     <>
 			<ProjectPresentation {...project.presentation} />

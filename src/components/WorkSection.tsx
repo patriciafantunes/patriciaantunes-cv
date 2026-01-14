@@ -43,9 +43,8 @@ export function WorkSection({title, intro, text, sections}: WorkSectionProps) {
 					{sections?.map((section, i) => {
 
 						const Component = section.composition ? COMPOSITIONS[section.composition] : null;
-						console.log("Props:", {...section.compositionProps})
+						
 						return (
-
 						<div key={i}>
 							<p className="text-4xl font-bold mt-12 mb-4 font-title italic ">{section.title}</p>
 							<p className="text-2xl font-bold mb-2">{section.intro}</p>

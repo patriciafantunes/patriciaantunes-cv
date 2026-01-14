@@ -18,9 +18,6 @@ export const projectPreviews: ProjectPreview[] = allProjects.map(
 
 // Função para encontrar um projeto pelo slug
 export function getProjectBySlug(slug: string) {
-  console.log(allProjects);
-  console.log("slug", slug);
-  console.log("find", allProjects.find((p) => p.slug === slug));
   return allProjects.find((p) => p.slug === slug);
 }
 
