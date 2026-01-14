@@ -40,9 +40,10 @@ export default function RootLayout({
           <main className="flex min-h-screen w-full max-w-5xl flex-col px-16 bg-white dark:bg-black sm:items-start">
             <nav className="w-full flex justify-between items-center py-8">
               <Link href="/"><h1 className="font-title italic text-4xl leading-none">Patrícia <span className="block ml-6 -mt-2">Antunes</span></h1></Link>
-              <Link href="/experience">01/experience</Link>
-              <Link href="/skills">02/skills</Link>
-              <Link href="/contacts">03/contacts</Link>
+              <Link href="/projects">01/projects</Link>
+              <Link href="/experience">02/experience</Link>
+              <Link href="/skills">03/skills</Link>
+              <Link href="/contacts">04/contacts</Link>
             </nav>
             {children}
             <footer className="pt-8 pb-4 text-center w-full">

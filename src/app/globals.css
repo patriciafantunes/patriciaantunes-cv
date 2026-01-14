@@ -57,9 +57,12 @@ body {
 }
 
 @utility animate-slide-fade {
-  animation: slideFade 12s ease-in-out infinite;
+  animation: slideFade 18s ease-in-out infinite 0s;
 }
 
 @utility animate-slide-fade-delay {
-  animation: slideFade 12s ease-in-out infinite 6s;
+  animation: slideFade 18s ease-in-out infinite 6s;
+}
+@utility animate-slide-fade-delay1 {
+  animation: slideFade 18s ease-in-out infinite 12s;
 }
