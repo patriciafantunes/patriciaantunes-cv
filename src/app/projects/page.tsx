@@ -16,7 +16,7 @@ export default async function projectsList() {
 			</div>
 
 			{projectPreviews.map((project) => (
-				<Link key={project.slug} href={`/projects/${project.slug}`} className="group  flex justify-between items-center py-2 px-0 md:px-6 duration-900 inset-shadow-[0_0_0_#fff] hover:inset-shadow-[900px_0_0_#e6e5e5] transition">
+				<Link key={project.slug} href={`/projects/${project.slug}`} className="group w-full flex justify-between items-center py-2 px-0 md:px-6 duration-900 inset-shadow-[0_0_0_#fff] hover:inset-shadow-[900px_0_0_#e6e5e5] transition">
 					<div>
 						<p className="text-2xl">{project.title}</p>
 						<p className="italic">{project.description}</p>

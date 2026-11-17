@@ -71,8 +71,8 @@ export default function RootLayout({
         className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
         <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
-          <main className="flex min-h-screen  max-w-5xl flex-col px-5 md:px-16 bg-white dark:bg-black sm:items-start">
-            <nav className=" flex justify-between items-center flex-wrap py-8">
+          <main className="flex min-h-screen w-full max-w-5xl flex-col px-5 md:px-16 bg-white dark:bg-black sm:items-start">
+            <nav className="w-full flex justify-between items-center flex-wrap py-8">
               <Link href="/"><h1 className="font-title italic text-2xl md:text-4xl leading-none">Patrícia <span className="block ml-6 -mt-2">Antunes</span></h1></Link>
               <Link href="/projects">01/projects</Link>
               <Link href="/experience">02/experience</Link>
@@ -80,7 +80,7 @@ export default function RootLayout({
               <Link href="/contacts">04/contacts</Link>
             </nav>
             {children}
-            <footer className="pt-8 pb-4 text-center ">
+            <footer className="pt-8 pb-4 text-center w-full">
               <p className="italic mb-1 text-sm">© {currentYear} Patrícia Antunes. Designed & built by me.</p>
               <p><a className="underline" target="_blank" href="https://www.linkedin.com/in/patr%C3%ADcia-antunes-b1906a114/">LinkedIn</a> · <a className="underline" target="_blank" href="https://github.com/patriciafantunes">GitHub</a></p>
             </footer>

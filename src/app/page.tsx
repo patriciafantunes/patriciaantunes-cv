@@ -8,7 +8,7 @@ export default function Home() {
 
 
   return (
-    <div className="relative h-[calc(100vh-225px)] flex justify-center">
+    <div className="relative h-[calc(100vh-225px)] flex justify-center w-full">
     
         <div className="absolute bg-white h-full max-w-3xl m-auto py-6 flex flex-col justify-center items-center opacity-0 animate-slide-fade">
           <p className="text-3xl md:text-7xl text-center">Brings a thoughtful <span className="bg-white px-2 mix-blend-difference">balance of creativity</span> and practical <span className="bg-white px-2 mix-blend-difference">technical problem-solving</span> to every project.</p>
