@@ -9,7 +9,11 @@ interface ComparisonImage {
   variant?: 'primary' | 'default';
 }
 
-export function BeforeAndAfter(images : ComparisonImage[] ) {
+interface BeforeAndAfterProps {
+  images: ComparisonImage[];
+}
+
+export function BeforeAndAfter({images} : BeforeAndAfterProps ) {
 	return (
 		<div className="flex justify-center items-start mt-15 mb-30">
 			{images.map((image, i) =>

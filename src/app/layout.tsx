@@ -82,7 +82,7 @@ export default function RootLayout({
             {children}
             <footer className="pt-8 pb-4 text-center w-full">
               <p className="italic mb-1 text-sm">© {currentYear} Patrícia Antunes. Designed & built by me.</p>
-              <p><a className="underline" target="_blank" href="https://www.linkedin.com/in/patr%C3%ADcia-antunes-b1906a114/">LinkedIn</a> · <a className="underline" target="_blank" href="https://github.com/patriciafantunes">GitHub</a></p>
+              <p><a className="underline" target="_blank" href="https://www.linkedin.com/in/patriciafantunes/">LinkedIn</a> · <a className="underline" target="_blank" href="https://github.com/patriciafantunes">GitHub</a></p>
             </footer>
           </main>
         </div>
