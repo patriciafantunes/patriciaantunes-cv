@@ -4,7 +4,7 @@ interface ImageLabelProps {
 	variant?: 'primary' | 'default';
 	label: string;
 	className?: string;
-	children: ReactNode;
+	children: React.ReactNode;
 }
 
 export function ImageLabel({ 

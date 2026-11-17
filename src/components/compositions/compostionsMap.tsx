@@ -1,7 +1,7 @@
 import { ColorPalette } from "@/components/compositions/ColorPalette"
 
 const COMPOSITIONS = {
-  colorPalette: <ColorPalette />
+  colorPalette: <ColorPalette colors={[]} />
 
 };
 

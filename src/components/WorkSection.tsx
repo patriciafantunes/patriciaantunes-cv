@@ -15,7 +15,7 @@ export interface WorkSectionProps {
 	title: string;
 	intro?: string;
 	text?: string[];
-	sections: {
+	sections?: {
 		title?: string;
 		intro?: string;
 		text?: string[];
@@ -23,7 +23,7 @@ export interface WorkSectionProps {
 			url: string;
 			alt: string;
 		};
-		composition?: "ColorPalette" | "BotecoSymbol" | "BeforeAndAfter" | "BeforeAfterSlider" ;
+		composition?: keyof typeof COMPOSITIONS;
 		compositionProps?: any;
 	}[];
 }
