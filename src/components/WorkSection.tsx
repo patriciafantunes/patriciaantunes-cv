@@ -2,6 +2,7 @@ import { ColorPalette } from "@/components/compositions/ColorPalette";
 import { BotecoSymbol } from "@/components/compositions/BotecoSymbol";
 import { BeforeAndAfter } from "@/components/compositions/BeforeAndAfter";
 import { BeforeAfterSlider } from "@/components/compositions/BeforeAfterSlider";
+import Image from "next/image";
 
 const COMPOSITIONS = {
   colorPalette: ColorPalette,
@@ -43,7 +44,7 @@ export function WorkSection({title, intro, text, sections}: WorkSectionProps) {
 					{sections?.map((section, i) => {
 
 						const Component = section.composition ? COMPOSITIONS[section.composition] : null;
-						
+
 						return (
 						<div key={i}>
 							<p className="text-4xl font-bold mt-12 mb-4 font-title italic ">{section.title}</p>
@@ -51,7 +52,7 @@ export function WorkSection({title, intro, text, sections}: WorkSectionProps) {
 							{section.text?.map((paragraph, i) => (
 								<p key={i} className="mb-2">{paragraph}</p>
 							))}
-							{section.image && <img className="m-auto mt-15 mb-40 w-80" src={section.image.url} alt={section.image.alt} />}
+							{section.image && <Image width={320} height={130} className="m-auto mt-15 mb-40 w-80" src={section.image.url} alt={section.image.alt} />}
 
 							
 							{Component && (

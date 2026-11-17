@@ -5,7 +5,7 @@ export default async function Page() {
 
   return (
     <>
-      <div className="h-[520] max-w-3xl m-auto py-20 flex flex-col justify-center items-center">
+      <div className="h-[520] max-w-3xl  m-auto py-20 flex flex-col justify-center items-center">
         <p className="text-7xl text-center">
           A look at the places and projects that shaped how I{' '}
           <span className="bg-white px-2 mix-blend-difference">

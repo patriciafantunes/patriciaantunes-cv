@@ -9,7 +9,7 @@ export function ColorPalette({colors}: colorPaletteProps) {
 			{colors.map((color, i) => (
 				<div key={i}
 					style={{ backgroundColor: color }}
-					className="bg-[${color}] w-15 h-15 rounded-full"
+					className="bg-[${color}] w-16 h-16 rounded-full"
 					title={color}></div>
 			))}
 

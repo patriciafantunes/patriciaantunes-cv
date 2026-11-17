@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { ImageLabel } from "@/components/ImageLabel";
+import Image from "next/image";
 
 interface ComparisonImage {
   url: string;
@@ -21,13 +22,15 @@ export function BeforeAndAfter({ images }: ComparisonImage[]) {
 					)}
 					label={image.role}
 					variant={image.variant} >
-					<img
+					<Image
+						width={500}
+						height={250}
 						className={cn(
-							image.role === 'before' && "w-full rounded",
-							image.role === 'after' && "w-full shadow-lg rounded border-2 border-white"
+							image.role === 'before' && " rounded",
+							image.role === 'after' && " shadow-lg rounded border-2 border-white"
 						)} 
 						src={image.url} 
-						alt={image.alt}/>
+						alt={image.alt} />
 				</ImageLabel>
 			)}
 		</div>

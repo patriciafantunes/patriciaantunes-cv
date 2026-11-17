@@ -12,6 +12,15 @@ type PageProps = {
   }>;
 };
 
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
+  return {
+    title: `${project?.title}`,
+    description: project?.description,
+  };
+}
+
 interface project {
 	presentation: ProjectPresentationProps;
 	sections: WorkSectionProps[];
