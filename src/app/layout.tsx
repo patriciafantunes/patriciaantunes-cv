@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { MobileMenu } from "@/components/MobileMenu";
+
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -65,6 +67,8 @@ export default function RootLayout({
 
   const currentYear = new Date().getFullYear();
 
+
+
   return (
     <html lang="en">
       <body
@@ -72,13 +76,15 @@ export default function RootLayout({
       >
         <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
           <main className="flex min-h-screen w-full max-w-5xl flex-col px-5 md:px-16 bg-white dark:bg-black sm:items-start">
-            <nav className="w-full flex justify-between items-center flex-wrap py-8">
-              <Link href="/"><h1 className="font-title italic text-2xl md:text-4xl leading-none">Patrícia <span className="block ml-6 -mt-2">Antunes</span></h1></Link>
+            <nav className="hidden w-full md:flex justify-between items-center flex-wrap py-8">
+              <Link href="/"><h1 className="hidden md:inline font-title italic text-2xl md:text-4xl leading-none">Patrícia <span className="block ml-6 -mt-2">Antunes</span></h1></Link>
               <Link href="/projects">01/projects</Link>
               <Link href="/experience">02/experience</Link>
               <Link href="/skills">03/skills</Link>
               <Link href="/contacts">04/contacts</Link>
+
             </nav>
+            <MobileMenu />
             {children}
             <footer className="pt-8 pb-4 text-center w-full">
               <p className="italic mb-1 text-sm">© {currentYear} Patrícia Antunes. Designed & built by me.</p>

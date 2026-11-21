@@ -1,6 +1,6 @@
 export interface ProjectConclusionProps {
 	text: string;
-	link: {
+	link?: {
 		href: string;
 		caption: string;
 	}
@@ -12,13 +12,16 @@ export function ProjectConclusion({text, link}: ProjectConclusionProps) {
 			<hr className="my-20" />
 			<div className="ml-14 text-center">
 				<p className="text-2xl mb-3">{text}</p>
-				<a
-				    href={link.href}
-				    target="_blank"
-				    className="underline underline-offset-4 hover:opacity-70"
-				  >
-				    {link.caption}
-				  </a>
+				{link && 
+					<a
+					    href={link.href}
+					    target="_blank"
+					    className="underline underline-offset-4 hover:opacity-70"
+					  >
+					    {link.caption}
+					  </a>
+				}
+				
 			</div>
 		</>
 	)

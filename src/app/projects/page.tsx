@@ -9,7 +9,7 @@ export default async function projectsList() {
 			<div className="h-[520] max-w-3xl  m-auto py-20 flex flex-col justify-center items-center">
 				<p className="text-4xl md:text-7xl text-center">
 					A selection of projects where{' '}
-					<span className="bg-white px-2 mix-blend-difference">
+					<span className="bg-white dark:text-black px-2 mix-blend-difference">
 					ideas, constraints, and execution
 					</span> come together.
 				</p>

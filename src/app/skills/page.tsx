@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <>
       <div className="h-[520]  max-w-3xl m-auto py-20 flex flex-col justify-center items-center">
-        <p className="text-7xl text-center">
+        <p className="text-4xl md:text-7xl text-center">
           Strong <span className="bg-white dark:text-black px-2 mix-blend-difference">foundations</span>, continuous <span className="bg-white dark:text-black px-2 mix-blend-difference">learning</span>, driven by real-world <span className="bg-white dark:text-black px-2 mix-blend-difference">challenges</span>.
         </p>
       </div>
