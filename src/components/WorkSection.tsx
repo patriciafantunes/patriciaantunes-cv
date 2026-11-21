@@ -35,7 +35,7 @@ export function WorkSection({title, intro, text, sections}: WorkSectionProps) {
 				<p className="text-4xl w-fit -rotate-4 mb-6 py-2 bg-white">
 					<span className="bg-white px-2 py-2 mix-blend-difference font-bold">{title}</span>
 				</p>
-				<div className="ml-14">
+				<div className="md:ml-14">
 					<p className="text-2xl font-bold mb-2">{intro}</p>
 					{text?.map((paragraph, i) => (
 						<p key={i} className="mb-2">{paragraph}</p>

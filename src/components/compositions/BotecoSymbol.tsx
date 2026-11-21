@@ -1,6 +1,6 @@
 export function BotecoSymbol() {
 	return(
-		<div className="flex items-center justify-center gap-x-10 mt-15 mb-40">
+		<div className="flex flex-col sm:flex-row items-center justify-center gap-x-10 mt-15 mb-40">
 					<div className="flex flex-col justify-center text-center">
 						<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.41 313.97" className="group w-30">
 							<g id="Layer_1-2" >

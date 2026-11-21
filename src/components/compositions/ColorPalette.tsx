@@ -5,7 +5,7 @@ interface colorPaletteProps {
 
 export function ColorPalette({colors}: colorPaletteProps) {
 	return(
-		<div className="flex justify-center gap-x-5 mt-15 mb-35">
+		<div className="flex flex-wrap justify-center gap-x-5 mt-15 mb-35">
 			{colors.map((color, i) => (
 				<div key={i}
 					style={{ backgroundColor: color }}

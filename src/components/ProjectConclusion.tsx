@@ -10,7 +10,7 @@ export function ProjectConclusion({text, link}: ProjectConclusionProps) {
 	return(
 		<>
 			<hr className="my-20" />
-			<div className="ml-14 text-center">
+			<div className="md:ml-14 text-center">
 				<p className="text-2xl mb-3">{text}</p>
 				{link && 
 					<a
