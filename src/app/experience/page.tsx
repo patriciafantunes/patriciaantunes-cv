@@ -18,7 +18,7 @@ export default async function Page() {
       <div className="py-8">
         <p className="text-5xl font-title italic py-4">Work</p>
 
-        <p className="italic pt-5">2019 - Present</p>
+        <p className="italic pt-5">2019 - 2026</p>
         <p className="text-3xl">Consultant at Agap2IT</p>
 
         <p className="pt-5 font-bold">Responsibilities:</p>
