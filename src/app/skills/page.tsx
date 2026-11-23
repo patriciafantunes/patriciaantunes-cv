@@ -18,6 +18,7 @@ export default function Skills() {
               <li>HTML5</li>
               <li>CSS3 & Responsive Layouts</li>
               <li>JavaScript (ES6+)</li>
+              <li>Typescript</li>
               <li>Component-based Development</li>
               <li>Performance & Best Practices</li>
               <li>Cross-browser Compatibility</li>
@@ -30,6 +31,7 @@ export default function Skills() {
             <ul className="space-y-2 flex flex-wrap gap-2 gap-x-7">
               <li>Angular</li>
               <li>Next.js</li>
+
               <li>React</li>
               <li>WordPress (Elementor)</li>
             </ul>
