@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { MobileMenu } from "@/components/MobileMenu";
+import { Analytics } from "@vercel/analytics/next"
 
 
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -92,7 +93,7 @@ export default function RootLayout({
             </footer>
           </main>
         </div>
-        
+        <Analytics />
       </body>
     </html>
   );

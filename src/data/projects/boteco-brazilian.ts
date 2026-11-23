@@ -12,7 +12,7 @@ export const botecoProject: ProjectDetail = {
   },
   sections: [
     {
-      title: "The Challange",
+      title: "The Challenge",
       intro: "This project focused on redefining the identity of a Brazilian-owned business operating in Denmark, within a very specific cultural context.",
       text: [
         "While the owner wanted to preserve the warmth and roots of Brazilian culture, the existing brand communication leaned toward a more expressive style that did not align with how wellness and personal care services are typically perceived in the local market — where calmness, trust, and discretion are key.",
