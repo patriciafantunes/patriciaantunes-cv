@@ -4,9 +4,11 @@ import { ProjectConclusionProps } from "@/components/ProjectConclusion";
 import { ProjectPresentationProps } from "@/components/ProjectPresentation";
 
 import { botecoProject } from "./boteco-brazilian";
+import { seedProject } from "./seed";
 
 export const allProjects: ProjectDetail[] = [
   botecoProject,
+  seedProject,
 ];
 
 // Função auxiliar para a listagem

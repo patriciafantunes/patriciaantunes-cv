@@ -22,6 +22,8 @@ export interface WorkSectionProps {
 		image?: {
 			url: string;
 			alt: string;
+			width?: number;
+			height?: number;
 		};
 		composition?: keyof typeof COMPOSITIONS;
 		compositionProps?: any;
@@ -52,7 +54,12 @@ export function WorkSection({title, intro, text, sections}: WorkSectionProps) {
 							{section.text?.map((paragraph, i) => (
 								<p key={i} className="mb-2">{paragraph}</p>
 							))}
-							{section.image && <Image width={320} height={130} className="m-auto mt-15 mb-40 w-80" src={section.image.url} alt={section.image.alt} />}
+							{section.image && <Image 
+																	width={section.image.width || 320}
+    															height={section.image.height || 130} 
+    															className="m-auto mt-15 mb-40 max-w-full" 
+    															src={section.image.url} 
+    															alt={section.image.alt} />}
 
 							
 							{Component && (
